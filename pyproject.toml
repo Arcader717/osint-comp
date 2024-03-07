@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=65.5.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "osint-comp"
+version = "0.1.0"
+description = "A place to keep osint files. Mainly a personal project."
+dependencies = [
+    "rich_click"
+]
+
+[project.scripts]
+osint = "osinter.__main__:cli"
