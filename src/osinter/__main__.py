@@ -178,7 +178,7 @@ def read(table, file):
         exit()
         
 @cli.command()
-@click.option("--autoformat", "-a", help="automatically uses the base format (base format in osint format", is_flag=True, default=False)
+@click.option("--autoformat", "-a", help="automatically uses the base format (base format in osint format)", is_flag=True, default=False)
 @click.option("--file", "-f", type=str, help="Name of new file", default="")
 def add(autoformat, file):
     """Adds a new data to the osint file"""
