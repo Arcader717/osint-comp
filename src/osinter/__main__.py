@@ -43,7 +43,7 @@ def new(file):
     os.system(f"touch osint/{file}/init.oie")
     os.system(f"touch osint/{file}/name.oie")
     os.system(f"touch osint/{file}/address.oie")
-    os.system(f"touch osint/{file}/online")
+    os.mkdir(f"touch osint/{file}/online")
     os.system(f"touch osint/{file}/online/usernames.oie")
     os.system(f"touch osint/{file}/online/emails.oie")
     fn = open(f"osint/{file}/name.oie", "a")
