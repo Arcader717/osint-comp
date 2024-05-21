@@ -40,10 +40,10 @@ def new(file):
         if os.path.exists(f"osint/{file}"):
             raise click.ClickException(f"A file with the name {file} already exists.")        
     os.mkdir(f"osint/{file}")
+    os.mkdir(f"osint/{file}/online")
     os.system(f"touch osint/{file}/init.oie")
     os.system(f"touch osint/{file}/name.oie")
     os.system(f"touch osint/{file}/address.oie")
-    os.mkdir(f"touch osint/{file}/online")
     os.system(f"touch osint/{file}/online/usernames.oie")
     os.system(f"touch osint/{file}/online/emails.oie")
     fn = open(f"osint/{file}/name.oie", "a")
